@@ -1,0 +1,50 @@
+{
+  "room": [
+    {
+      "id": "3c15",
+      "customer": "Mihir",
+      "email": "mihir@gmail.com",
+      "phone": "4578963210",
+      "room_type": "e60b",
+      "total_person": "2"
+    },
+    {
+      "id": "e107",
+      "customer": "Nayan",
+      "email": "nayan@gmail.com",
+      "phone": "789654123",
+      "room_type": "e60b",
+      "total_person": "2"
+    }
+  ],
+  "room_type": [
+    {
+      "id": "18ff",
+      "room_type": "df"
+    },
+    {
+      "id": "e60b",
+      "room_type": "Delux"
+    },
+    {
+      "id": "886c",
+      "room_type": "Executive"
+    },
+    {
+      "id": "aa37",
+      "room_type": "Suite"
+    },
+    {
+      "id": "1292",
+      "room_type": "Double"
+    },
+    {
+      "id": "4c88",
+      "room_type": "Single"
+    },
+    {
+      "id": "6111",
+      "room_type": "nnnn"
+    }
+  ]
+}
