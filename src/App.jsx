@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Routing from "./Layout.jsx";
 import { Suspense } from "react";
 import Loading from "./Component/Loading.jsx";
+import { ToastContainer,Bounce } from "react-toastify";
 
 const App = () => {
   return (
@@ -17,7 +18,19 @@ const App = () => {
           </Routes>
         </Suspense>
       </Router>
-      
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </>
   );
 };

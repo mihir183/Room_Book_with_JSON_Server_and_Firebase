@@ -19,22 +19,6 @@
   ],
   "room_type": [
     {
-      "id": "18ff",
-      "room_type": "df"
-    },
-    {
-      "id": "e60b",
-      "room_type": "Delux"
-    },
-    {
-      "id": "886c",
-      "room_type": "Executive"
-    },
-    {
-      "id": "aa37",
-      "room_type": "Suite"
-    },
-    {
       "id": "1292",
       "room_type": "Double"
     },
@@ -43,8 +27,16 @@
       "room_type": "Single"
     },
     {
-      "id": "6111",
-      "room_type": "nnnn"
+      "id": "9b13",
+      "room_type": "Delux"
+    },
+    {
+      "id": "4fc4",
+      "room_type": "Exclutive"
+    },
+    {
+      "id": "d222",
+      "room_type": "Couple"
     }
   ]
 }
