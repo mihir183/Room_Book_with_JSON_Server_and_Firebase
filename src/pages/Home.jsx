@@ -13,6 +13,7 @@ const Home = () => {
   const [room, setRoom] = useState([]);
   const [allRoom, setAllRoom] = useState([]);
   const [search, setSearch] = useState([]);
+  // const [curUser,setUser] = useState({})
 
   // console.log(import.meta.env.VITE_API)
   async function fetchData() {
@@ -20,6 +21,12 @@ const Home = () => {
     setRoom(result.data);
     setAllRoom(result.data);
     setSearch(result.data);
+  }
+
+  // Fetch Current User
+  async function fetchUser() {
+    const res = await api.get('/cur_user');
+    console.log(res.data)
   }
 
   // Delete Task Function
@@ -62,11 +69,12 @@ const Home = () => {
 
   useEffect(() => {
     fetchData();
+    // fetchUser();
   }, []);
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container mt-4">
         <div className="row flex-row-reverse">
           <div className="col-lg-3">
             <input

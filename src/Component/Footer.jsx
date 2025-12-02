@@ -1,10 +1,9 @@
 const Footer = () => {
   return (
     <>
-      <div
-        className="bg-dark text-light p-3 w-100 text-center mt-5">
+      <div className="bg-dark text-light p-3 w-100 text-center mt-5 fixed-bottom">
         <p className="text-capitalize">
-          developed by
+          developed by{" "}
           <a href="https://github.com/mihir183" className="text-light">
             @mihir183
           </a>

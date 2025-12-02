@@ -1,0 +1,16 @@
+<img src="./src//assets/images/output/login.png">
+<img src="./src//assets/images/output/register.png">
+<img src="./src//assets/images/output/google.png">
+<img src="./src//assets/images/output/verify.png">
+<img src="./src//assets/images/output/home.png">
+<img src="./src//assets/images/output/book.png">
+<img src="./src//assets/images/output/book2.png">
+<img src="./src//assets/images/output/home2.png">
+<img src="./src//assets/images/output/search.png">
+<img src="./src//assets/images/output/search2.png">
+<img src="./src//assets/images/output/edit_book.png">
+<img src="./src//assets/images/output/delete.png">
+<img src="./src//assets/images/output/delete2.png">
+<img src="./src//assets/images/output/delete3.png">
+<img src="./src//assets/images/output/admin_home.png">
+<img src="./src//assets/images/output/show_book.png">

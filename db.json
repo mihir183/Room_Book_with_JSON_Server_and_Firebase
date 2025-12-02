@@ -1,20 +1,33 @@
 {
+  "users": [
+    {
+      "id": "a4fc",
+      "username": "mihir",
+      "email": "mihir123@gmail.com",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHoH6SjmetH5_WWW8bi-D5a66kWbHSFbDtw&s",
+      "pass": "123",
+      "cpass": "123"
+    }
+  ],
+  "cur_user": [
+    {
+      "id": "a4fc",
+      "username": "mihir",
+      "email": "mihir123@gmail.com",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHoH6SjmetH5_WWW8bi-D5a66kWbHSFbDtw&s",
+      "pass": "123",
+      "cpass": "123"
+    }
+  ],
   "room": [
     {
-      "id": "3c15",
+      "id": "1b03",
       "customer": "Mihir",
-      "email": "mihir@gmail.com",
-      "phone": "4578963210",
-      "room_type": "e60b",
-      "total_person": "2"
-    },
-    {
-      "id": "e107",
-      "customer": "Nayan",
-      "email": "nayan@gmail.com",
-      "phone": "789654123",
-      "room_type": "e60b",
-      "total_person": "2"
+      "email": "mihir123@gmail.com",
+      "phone": "8596741230",
+      "room_type": "Double",
+      "total_person": "2",
+      "custId": "3124"
     }
   ],
   "room_type": [
@@ -37,6 +50,10 @@
     {
       "id": "d222",
       "room_type": "Couple"
+    },
+    {
+      "id": "8f3c",
+      "room_type": "Family "
     }
   ]
 }

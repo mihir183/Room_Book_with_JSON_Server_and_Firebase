@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.png";
 import { useEffect } from "react";
 import api from "../API";
 import { useState } from "react";
-const Header = () => {
+const Admin_Header = () => {
   const navigate = useNavigate();
   const [curUser, setUser] = useState([]);
 
@@ -15,7 +15,6 @@ const Header = () => {
 
   useEffect(() => {
     fetchUser();
-    console.log(curUser);
   }, []);
 
   async function logout() {
@@ -35,9 +34,6 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="" width={50} />
-          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -49,27 +45,8 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link
-                  className="nav-link text-capitalize"
-                  aria-current="page"
-                  to="/home"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link text-capitalize"
-                  aria-current="page"
-                  to="/bookRoom"
-                >
-                  book room
-                </Link>
-              </li>
-            </ul>
+          <div className="collapse navbar-collapse w-100 justify-content-end" id="navbarSupportedContent">
+           
             <form>
               {curUser.length === 0 ? (
                 <button
@@ -172,4 +149,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Admin_Header;

@@ -11,6 +11,7 @@ const BookRoomForm = () => {
   const { id } = useParams();
   const [roomType, setType] = useState([]);
   const [room, setRoom] = useState([]);
+  const [curUser, setUser] = useState({});
 
   const navigate = useNavigate();
 
@@ -20,6 +21,13 @@ const BookRoomForm = () => {
     reset(result.data);
   }
 
+  async function fetchUser(){
+    const result = await api.get('/cur_user');
+    const res = result.data
+    const last = res.at(-1)
+    setUser(last)
+  }
+
   async function showRoomType(){
     const res = await api.get('/room_type');
     setType(res.data)
@@ -27,15 +35,19 @@ const BookRoomForm = () => {
   
   useEffect(()=>{
     showRoomType()
+    fetchUser()
     reset()
   },[])
 
   useEffect(() => {
     fetchData();
+    fetchUser();
   },[id]);
 
   // Function to Book Room
   async function bookRoom(data) {
+    data.custId = curUser.id
+    // console.log(data)
     if (id == null) {
       await api
         .post("/room", data)
@@ -48,7 +60,7 @@ const BookRoomForm = () => {
       navigate("/home");
     }
   }
-
+  
   return (
     <>
       <Header />

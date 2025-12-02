@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.back {
+  margin: 0;
+  background-image: url("https://i.pinimg.com/1200x/be/62/16/be6216d2b068e0b76f88cded8c21e2a7.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+}

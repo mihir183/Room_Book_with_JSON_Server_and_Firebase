@@ -1,6 +1,7 @@
 import { lazy } from "react";
 const Home = lazy(()=> import('./pages/Home'))
 const Login = lazy(()=> import('./pages/Login'))
+const Register = lazy(()=> import('./pages/Register'))
 const BookRoom = lazy(()=> import('./pages/BookRoomForm'))
 const Error = lazy(()=> import('./pages/Error'))
 const Admin = lazy(()=>import('./pages/Admin'))
@@ -9,6 +10,10 @@ const Routing = [
     {
         path : '/',
         element : Login
+    },
+    {
+        path : '/register',
+        element : Register
     },
     {
         path : '/home',
@@ -24,6 +29,10 @@ const Routing = [
     },
     {
         path : '/admin',
+        element : Admin
+    },
+    {
+        path : '/showbook',
         element : Admin
     },
     {
